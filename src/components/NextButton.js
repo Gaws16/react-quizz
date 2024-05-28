@@ -1,4 +1,7 @@
-function NextButton({ dispatch, answear, index, numQuestions }) {
+import { useQuiz } from "../context/ReactQuizContext";
+
+function NextButton() {
+  const { dispatch, answear, index, numQuestions } = useQuiz();
   if (answear === null) {
     return null;
   }
